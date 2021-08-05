@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 current: post
 cover: assets/images/sky.jpg
@@ -22,4 +22,4 @@ console.log(add(a,b));
 ```
 
 # h1
-## h2
+## h2 -->
