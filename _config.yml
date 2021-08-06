@@ -17,7 +17,7 @@ excerpt_seperator:  <!--break-->
 title: 우당탕 프로덕트 개발 여정
 description: 우당탕 프로덕트 개발 여정
 cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
+logo: assets/images/blog-icon-2.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 CNAME: #add cname for website to be created
@@ -47,7 +47,7 @@ permalink: /:title
 
 # gems and other configs
 plugins_dir: [_plugins]
-plugins: [jekyll-paginate, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-gist]
 
 feed:
   path: feed.xml
