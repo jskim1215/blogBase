@@ -2,7 +2,7 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 20 # it will paginate after this number
-language: 'en-uk'
+language: "en-uk"
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
@@ -10,8 +10,7 @@ baseurl: /
 
 # 구분자 사용 (excerpt_seperator)
 # 구분자를 사용하면 포스트를 작성할 때 글의 어느 위치까지 요약문에 포함시킬 것인지 미리 지정할 수 있다.
-excerpt_seperator:  <!--break-->
-
+excerpt_seperator: <!--break-->
 
 # Website info
 title: 우당탕 프로덕트 개발 여정
@@ -27,15 +26,15 @@ navigation: True # show the navbar links
 subscribers: True # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter:  # replace by your username
-facebook:  # replace by your username
+twitter: # replace by your username
+facebook: # replace by your username
 
 # Disqus
 disqus: False
-disqus_shortname:  # replace with your disqus username
+disqus_shortname: # replace with your disqus username
 
 # Google Analytics
-google_analytics:  # replace with your GA tracking identifier
+google_analytics: # replace with your GA tracking identifier
 
 # Permalinks
 permalink: /:title
@@ -75,10 +74,10 @@ lsi: False
 username: Triary
 repo: GitHubPageMaker
 branch: master
-relative_source: 
+relative_source:
 destination: ../[GitHubPage]/
-production_url:  https://jskim1215.github.io
-source_url:  https://github.com/jskim1215/GitHubPageMaker # blogmaker (jekyll source folder)에 대한 github repository
+production_url: https://jskim1215.github.io
+source_url: https://github.com/jskim1215/GitHubPageMaker # blogmaker (jekyll source folder)에 대한 github repository
 
 url: https://jskim1215.github.io
 

@@ -20,10 +20,11 @@ into the {body} of the default.hbs template -->
 <!-- #post -->
 
 <main id="site-main" class="site-main outer" role="main">
+  
     <div class="inner">
-
+        
         <article class="post-full {% if page.tags.size > 0 %}{% for tag in page.tags %} tag-{{ tag | slugify: "latin" }}{% endfor %}{% endif %} {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
-
+            
             <header class="post-full-header">
                 <section class="post-full-meta">
                     <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
@@ -45,10 +46,16 @@ into the {body} of the default.hbs template -->
             <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
             </figure>
             {% endif %}
-
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    {{ content }}
+                    <article class="post-article">
+                        
+                        <div class="toc">
+                            <div class="toc-title">목차</div>
+                            {% include toc.html html=content sanitize=true class="inline_toc" submenu_class="sub_toc" id="my_toc" h_min=2 h_max=3 %}
+                          </div>
+                        {{ content }}
+                      </article>
                 </div>
             </section>
 
