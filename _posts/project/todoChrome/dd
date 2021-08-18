@@ -1,0 +1,25 @@
+const SelfAd = () => {
+  const test = async () => {
+    let blogObj = [];
+    const attachmentRef = await (
+      await storageSerive.ref().child("blog").listAll()
+    ).items;
+    attachmentRef.map(async (item) => {
+      const blogCoverURL = await item.getDownloadURL();
+      const blogCoverName = item.name.split(".")[0];
+      let eachBlogObj = { name: blogCoverName, imageURL: blogCoverURL };
+      blogObj.push(eachBlogObj);
+    });
+    return blogObj;
+  };
+
+  return (
+    <div>
+      <span>???</span>
+    </div>
+  );
+};
+
+export default SelfAd;
+
+여기서 asyn await 때문에 blogObj에 object가 추가되지 않음!!

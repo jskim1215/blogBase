@@ -557,8 +557,12 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 /* 7. Single Post
 /* ---------------------------------------------------------- */
+.toc-container {
+  width: 100%;
+  margin-left: 19%;
+}
 .toc {
-  width: auto;
+  width: 62%;
   border-radius: 30px;
   padding-top: 20px;
   padding-left: 20px;
@@ -931,6 +935,7 @@ Usage (In Ghost editor):
   margin: 0.5em 0 0.2em 0;
   font-size: 3.6rem;
   font-weight: 700;
+  color: #3d5afe;
 }
 @media (max-width: 500px) {
   .post-full-content h2 {

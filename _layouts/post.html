@@ -50,10 +50,12 @@ into the {body} of the default.hbs template -->
                 <div class="kg-card-markdown">
                     <article class="post-article">
                         
-                        <div class="toc">
-                            <div class="toc-title">목차</div>
-                            {% include toc.html html=content sanitize=true class="inline_toc" submenu_class="sub_toc" id="my_toc" h_min=2 h_max=3 %}
-                          </div>
+                        <div class="toc-container">
+                            <div class="toc">
+                                <div class="toc-title">목차</div>
+                                {% include toc.html html=content sanitize=true class="inline_toc" submenu_class="sub_toc" id="my_toc" h_min=2 h_max=3 %}
+                              </div>
+                        </div>
                         {{ content }}
                       </article>
                 </div>
