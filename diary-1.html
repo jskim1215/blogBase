@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>
+      개발 블로그를 시작하려는 여러분들께
+    </title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/screen.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/screen.edited.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/syntax.css"
+    />
+
+    <!-- 여기는 전부 커스터마이징 하는 파일들 추가해논 것!!! -->
+    <!-- custom .css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/custom.css"
+    />
+    <!-- 웹폰트 추가 -->
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- 여기는 전부 커스터마이징 하는 파일들 추가해논 것!!! -->
+
+    <!-- highlight.js -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+    />
+    <style>
+      .hljs {
+        background: none;
+      }
+    </style>
+
+    <!--[if IE]>
+      <style>
+        p,
+        ol,
+        ul {
+          width: 100%;
+        }
+        blockquote {
+          width: 100%;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="우당탕 프로덕트 개발 여정" />
+    <link rel="shortcut icon" href="https://jskim1215.github.io/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://jskim1215.github.io/diary-1" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="우당탕 프로덕트 개발 여정" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="개발 블로그를 시작하려는 여러분들께" />
+    <meta property="og:description" content="나의 블로그 경험 깃허브 페이지를 통해 블로그를 작성한 경험은 첫번째는 아닙니다. 정확히 지금은 두번째 블로그 시작인데 사실 이번 블로그도 10개 정도 포스팅을 하다가 갈아 엎었습니다. 물론 오랜 기간 경험한 것은 아니지만 시작이 반이다라는 말이 크게 다가왔던 기억을 더듬어 보면서 내가 했던 실수를 전달할 겸 이렇게 글을 써봅니다. 블로그 설계의 미숙함" />
+    <meta property="og:url" content="https://jskim1215.github.io/diary-1" />
+    <meta property="og:image" content="https://jskim1215.github.io/assets/images/advanced.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2021-08-07T01:01:01+00:00" />
+    <meta property="article:modified_time" content="2021-08-07T01:01:01+00:00" />
+    <meta property="article:tag" content="Diary" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="개발 블로그를 시작하려는 여러분들께" />
+    <meta name="twitter:description" content="나의 블로그 경험 깃허브 페이지를 통해 블로그를 작성한 경험은 첫번째는 아닙니다. 정확히 지금은 두번째 블로그 시작인데 사실 이번 블로그도 10개 정도 포스팅을 하다가 갈아 엎었습니다. 물론 오랜 기간 경험한 것은 아니지만 시작이 반이다라는 말이 크게 다가왔던 기억을 더듬어 보면서 내가 했던 실수를 전달할 겸 이렇게 글을 써봅니다. 블로그 설계의 미숙함" />
+    <meta name="twitter:url" content="https://jskim1215.github.io/" />
+    <meta name="twitter:image" content="https://jskim1215.github.io/assets/images/advanced.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="우당탕 프로덕트 개발 여정" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Diary" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "우당탕 프로덕트 개발 여정",
+        "logo": "https://jskim1215.github.io/assets/images/blog-icon-2.png"
+    },
+    "url": "https://jskim1215.github.io/diary-1",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://jskim1215.github.io/assets/images/advanced.jpg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://jskim1215.github.io/diary-1"
+    },
+    "description": "나의 블로그 경험 깃허브 페이지를 통해 블로그를 작성한 경험은 첫번째는 아닙니다. 정확히 지금은 두번째 블로그 시작인데 사실 이번 블로그도 10개 정도 포스팅을 하다가 갈아 엎었습니다. 물론 오랜 기간 경험한 것은 아니지만 시작이 반이다라는 말이 크게 다가왔던 기억을 더듬어 보면서 내가 했던 실수를 전달할 겸 이렇게 글을 써봅니다. 블로그 설계의 미숙함"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="개발 블로그를 시작하려는 여러분들께" href="/feed.xml" />
+
+  </head>
+  <body
+    class="post-template"
+  >
+    <div class="site-wrapper">
+      <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+      <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="https://jskim1215.github.io/"><img src="/assets/images/blog-icon-2.png" alt="우당탕 프로덕트 개발 여정" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+    <li class="nav-getting-started" role="menuitem"><a href="/tag/study/">Study</a></li>
+    <li class="nav-getting-started" role="menuitem"><a href="/tag/project/">Project</a></li>
+    <li class="nav-getting-started" role="menuitem"><a href="/tag/diary/">Diary</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+  
+    <div class="inner">
+        
+        <article class="post-full  tag-diary post ">
+            
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 7 August 2021"> 7 August 2021</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/diary/'>DIARY</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">개발 블로그를 시작하려는 여러분들께</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/advanced.jpg)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <article class="post-article">
+                        
+                        <div class="toc-container">
+                            <div class="toc">
+                                <div class="toc-title">목차</div>
+                                <ul class="inline_toc" id="my_toc"><li><a href="#나의-블로그-경험">나의 블로그 경험</a><ul class="sub_toc"><li><a href="#블로그-설계의-미숙함">블로그 설계의 미숙함</a></li></ul></li><li><a href="#나만의-블로그-기획법">나만의 블로그 기획법</a><ul class="sub_toc"><li><a href="#컨텐츠-기획">컨텐츠 기획</a></li><li><a href="#카테고리">카테고리</a></li><li><a href="#블로그-디자인">블로그 디자인</a></li></ul></li><li><a href="#시작하려는-분들께">시작하려는 분들께</a></li></ul>
+
+                              </div>
+                        </div>
+                        <h2 id="나의-블로그-경험">나의 블로그 경험</h2>
+
+<p>깃허브 페이지를 통해 블로그를 작성한 경험은 첫번째는 아닙니다. 정확히 지금은 두번째 블로그 시작인데 사실 이번 블로그도 10개 정도 포스팅을 하다가 갈아 엎었습니다. 물론 오랜 기간 경험한 것은 아니지만 <code class="language-plaintext highlighter-rouge">시작이 반이다</code>라는 말이 크게 다가왔던 기억을 더듬어 보면서 내가 했던 실수를 전달할 겸 이렇게 글을 써봅니다. <br /></p>
+
+<h3 id="블로그-설계의-미숙함">블로그 설계의 미숙함</h3>
+
+<p>블로그 누구나 할 수 있다라고 다들 말은 하지만 저는 아무나 할 수 없다고 생각합니다. 물론 상황마다 다르겠지만 내가 컨텐츠화 할 수 있는 리소스가 많지 않다면 아무나 시작하기에는 큰 어려움이 있습니다. 특히 개발 블로그의 경우, 워낙 리소스도 많고 하다보니 처음에는 호기롭게 시작했으나 시간이 흐르면서 의욕을 잃을 가능성이 높다고 생각합니다.</p>
+
+<p>그래서 블로그를 처음 시작할 때, 블로그의 방향성에 대해 깊이 고민해봐야합니다. 제 경험을 간단하게 요약하자면 처음 블로그를 시작했던 것은 <code class="language-plaintext highlighter-rouge">자동매매 프로그램 개발 일지</code>를 남기겠다라는 단순한 목표로 포스팅을 하기 시작했고, 두번째 블로그는 <code class="language-plaintext highlighter-rouge">나의 성장 포트폴리오</code>로써 나를 알리는 하나의 매체로 활용하기 위함이였습니다.</p>
+
+<p>첫번째 블로그는 프로그래밍도 서투르고 매매 알고리즘에도 서투르다보니 무엇부터 해야할지 맥락을 찾지 못한채 그렇게 휩쓸려서 사라져버렸습니다. 두번째 블로그는 처음에 카테고리는 잘 잡아서 글을 쓰기 시작했으나 각 포스팅의 디테일적인 부분을 기획하지 못하니 너무 두서없이 흘러가는 것 같아서 한 번 뒤엎었습니다.</p>
+
+<p>블로그를 누구나 시작할 수 있고 글을 쓸 수 있지만 제일 먼저 내가 무엇에 대해 작성할지 생각해보고 그 다음 왜 작성하는지 생각해보고 마지막으로 어떻게 작성할지 생각해보는 것이 중요하다고 생각합니다. 사실 순서의 차이는 있겠지만 컨텐츠, 독자, 그리고 다시 컨텐츠를 생각해보는 것이 나름 체계적으로 블로그를 써나갈 수 있고 이런 <code class="language-plaintext highlighter-rouge">체계적인 시스템</code>이 바탕이 되야 지속 가능성을 생각해볼 수 있다고 생각합니다.</p>
+
+<h2 id="나만의-블로그-기획법">나만의 블로그 기획법</h2>
+
+<p>그래서 이번에 어떻게 블로그를 기획해봤냐 순서를 조금 더 디테일하게 설명해보겠습니다.</p>
+
+<h3 id="컨텐츠-기획">컨텐츠 기획</h3>
+
+<p>제가 핵심 주제로 잡은 부분은 <code class="language-plaintext highlighter-rouge">나의 성장</code>입니다. 내가 진짜 학습자로서 학습 플랫폼들의 라이브한 경험을 보여줄 수 있다고 생각해서 컨텐츠로 이런 부분을 기획했습니다. 이 부분의 시너지를 위해 <code class="language-plaintext highlighter-rouge">타임랩스 유튜브</code>를 같이 진행해볼 생각입니다.</p>
+
+<h3 id="카테고리">카테고리</h3>
+
+<p>컨텐츠를 기획하고 이후 확장성 부분에 대비하고 체계적인 시스템을 갖추기 위해 컨텐츠의 카테고리화를 진행해야합니다. 앞서 기획해놓은 컨텐츠를 어떻게 분류할 수 있을지 생각해보면 됩니다. 저 같은 경우에는 <code class="language-plaintext highlighter-rouge">성장</code>을 키워드로 <code class="language-plaintext highlighter-rouge">학습과 프로젝트 그리고 다이어리</code> 이렇게 세 가지 카테고리로 컨텐츠를 나누어 놓았습니다.</p>
+
+<h3 id="블로그-디자인">블로그 디자인</h3>
+
+<p>사실 <code class="language-plaintext highlighter-rouge">깃허브 블로그</code>를 시작하면서 가장 고민이 많은 부분이기도 합니다. <code class="language-plaintext highlighter-rouge">줄글</code>이라는 특성상 독자의 가독성이 가장 중요하기 때문에 저는 개인적으로 블로그의 디자인에 큰 신경을 썻던 것 같습니다. 굉장히 많은 구글링을 통해 많은 <code class="language-plaintext highlighter-rouge">jekyll theme</code>를 봤지만 제가 썻던 가장 좋았던 두 개의 디자인은 아래와 같습니다.</p>
+
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">minimal mistakes</code> <br /> 일단 이 친구 같은 경우에는 Document가 굉장히 잘 되있고 한국어 사용자들도 꽤 있어서 사용하는데 큰 어려움은 없어요.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Jasper2</code> <br /> Ghost라는 블로그 플랫폼의 디자인과 동일한 디자인 레이아웃을 가지고 있어서 일단 검증된 디자인이지만 사용하는데 조금 걸릴 수도 있어요. 하지만 잘 설명된 블로그가 한 군데 존재해서 여기를 보고 따라해보시면 큰 어려움은 없을 거에요. <a href="https://moon9342.github.io/jekyll-start">해당 블로그 링크</a> 참고하시면 됩니다.</p>
+  </li>
+</ol>
+
+<h2 id="시작하려는-분들께">시작하려는 분들께</h2>
+
+<p>사실 비전공자든 전공자든 지금 세상에 가장 좋다고는 할 수 없지만 일단 가장 간단한 자기 PR 플랫폼으로써는 블로그가 괜찮은 것 같습니다. 다만 굉장히 나만의 만족으로 그칠 수 있기 때문에 한 번 설계했다해서 그만두지 않고 계속해서 설계를 수정해나가다보면 저도 여러분도 유명한 사람이 되있지 않을까 생각합니다. 다들 화이팅!!</p>
+
+                      </article>
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            <!-- 
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to 우당탕 프로덕트 개발 여정</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+                </section>
+             -->
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/images/author-logo.png" alt="CodePurple" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/CodePurple">CodePurple</a></h4>
+                                
+                                    <p>The professional publishing platform</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/CodePurple">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/study-2-1">
+                <div class="post-card-image" style="background-image: url(/assets/study/study-2-1.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/study-2-1">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Study</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">실전형 React Hooks 10개 (1) - UseState</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>useState()
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/author-logo.png" alt="CodePurple" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/CodePurple/">CodePurple</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/study-4-2">
+                <div class="post-card-image" style="background-image: url(/assets/study/study-4-2.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/study-4-2">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Study</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">React로 웹 앱 만들기 - Router</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>Router?
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/author-logo.png" alt="CodePurple" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/CodePurple/">CodePurple</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="https://jskim1215.github.io/">
+            
+                <img src="/assets/images/favicon.png" alt="우당탕 프로덕트 개발 여정 icon" />
+            
+            <span>우당탕 프로덕트 개발 여정</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">개발 블로그를 시작하려는 여러분들께</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%EA%B0%9C%EB%B0%9C+%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC+%EC%8B%9C%EC%9E%91%ED%95%98%EB%A0%A4%EB%8A%94+%EC%97%AC%EB%9F%AC%EB%B6%84%EB%93%A4%EA%BB%98&amp;url=https://jskim1215.github.iodiary-1"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://jskim1215.github.iodiary-1"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+      <!-- Previous/next page links - displayed on every page -->
+      
+
+      <!-- The footer at the very bottom of the screen -->
+      <footer class="site-footer outer">
+        <div class="site-footer-content inner">
+          <section class="copyright">
+            <a href="https://jskim1215.github.io/">우당탕 프로덕트 개발 여정</a>
+            &copy; 2021
+          </section>
+          <section class="poweredby">
+            Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+            <a href="https://pages.github.com/" target="_blank" rel="noopener"
+              >GitHub Pages</a
+            >
+            using
+            <a
+              href="https://github.com/jekyllt/jasper2"
+              target="_blank"
+              rel="noopener"
+              >Jasper2</a
+            >
+          </section>
+          <nav class="site-footer-nav">
+            <a href="/">Latest Posts</a>
+             
+            <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+    <div id="subscribe" class="subscribe-overlay">
+      <a class="subscribe-overlay-close" href="#"></a>
+      <div class="subscribe-overlay-content">
+        
+        <img
+          class="subscribe-overlay-logo"
+          src="/assets/images/blog-icon-2.png"
+          alt="우당탕 프로덕트 개발 여정"
+        />
+        
+        <h1 class="subscribe-overlay-title">Subscribe to 우당탕 프로덕트 개발 여정</h1>
+        <p class="subscribe-overlay-description">
+          Stay up to date! Get all the latest &amp; greatest posts delivered
+          straight to your inbox
+        </p>
+        <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+      </div>
+    </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("pre code").each(function (i, block) {
+          hljs.highlightBlock(block);
+        });
+      });
+    </script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/assets/js/jquery.fitvids.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"
+    ></script>
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+     <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+ 
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+  </body>
+</html>

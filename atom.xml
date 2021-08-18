@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>우당탕 프로덕트 개발 여정</description>
+    <link>
+    https://jskim1215.github.io</link>
+    
+      
+      <item>
+        <title>(React with Firebase) - Chrome Extension 프로젝트시 주의해야할 점</title>
+        
+          <description>&lt;h2 id=&quot;react-router-dom-사용-불가&quot;&gt;React-Router-DOM 사용 불가&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Tue, 17 Aug 2021 01:01:01 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-0-1</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-0-1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>투두리스트 Chrome Extension (4) - JS to React</title>
+        
+          <description>&lt;h2 id=&quot;시작에-앞서&quot;&gt;시작에 앞서&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Thu, 12 Aug 2021 04:01:06 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/project-2-4</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/project-2-4</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>트위터 클론 코딩 (2) - Authentication</title>
+        
+          <description>&lt;h2 id=&quot;시작에-앞서&quot;&gt;시작에 앞서&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Thu, 12 Aug 2021 04:01:01 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-3-2</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-3-2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>트위터 클론 코딩 (1) - FireBase란?</title>
+        
+          <description>&lt;p&gt;나는 창업을 하고 싶었지 프로그래밍을 배우고 싶지는 않았다. 하지만 당신이 가진 리소스가 충분하지 않다면 시간을 좀만 투자해서 당장 서비스를 런칭할 수 있는 방법 중 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FireBase&lt;/code&gt;는 최고의 선택이라고 생각한다.&lt;!--break--&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 12 Aug 2021 03:01:01 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-3-1</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-3-1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>실전형 React Hooks 10개 (3) - UseRef</title>
+        
+          <description>&lt;h2 id=&quot;useref란&quot;&gt;useRef란?&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sun, 08 Aug 2021 03:01:04 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-2-3</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-2-3</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>실전형 React Hooks 10개 (2) - UseEffect</title>
+        
+          <description>&lt;h2 id=&quot;useeffect&quot;&gt;UseEffect&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sun, 08 Aug 2021 02:01:01 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-2-2</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-2-2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>실전형 React Hooks 10개 (1) - UseState</title>
+        
+          <description>&lt;h2 id=&quot;usestate&quot;&gt;useState()&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sun, 08 Aug 2021 01:01:01 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-2-1</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-2-1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>개발 블로그를 시작하려는 여러분들께</title>
+        
+          <description>&lt;h2 id=&quot;나의-블로그-경험&quot;&gt;나의 블로그 경험&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sat, 07 Aug 2021 01:01:01 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/diary-1</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/diary-1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>React로 웹 앱 만들기 - Router</title>
+        
+          <description>&lt;h2 id=&quot;router&quot;&gt;Router?&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Fri, 06 Aug 2021 03:01:02 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-4-2</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-4-2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>React로 웹 앱 만들기 - React 개론</title>
+        
+          <description>&lt;h2 id=&quot;내가-느낀-react&quot;&gt;내가 느낀 React&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Fri, 06 Aug 2021 03:01:01 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-4-1</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-4-1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>투두리스트 Chrome Extension (3) - 학습용 스톱워치 그리고 공부시간 수정하기</title>
+        
+          <description>&lt;h2 id=&quot;구현-아이디어&quot;&gt;구현 아이디어&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Thu, 05 Aug 2021 01:01:06 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/project-2-3</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/project-2-3</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>투두리스트 Chrome Extension (2) - 할 일 등록하기</title>
+        
+          <description>&lt;h2 id=&quot;구현-아이디어&quot;&gt;구현 아이디어&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Thu, 05 Aug 2021 01:01:05 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/project-2-2</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/project-2-2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>투두리스트 Chrome Extension (1) - 기획하기</title>
+        
+          <description>&lt;h2 id=&quot;기획의도&quot;&gt;기획의도&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Thu, 05 Aug 2021 01:01:04 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/project-2-1</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/project-2-1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>바닐라 JS로 크롬 앱 만들기 (3) - Local Storage And Clock</title>
+        
+          <description>&lt;h2 id=&quot;local-storage&quot;&gt;Local Storage&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Thu, 05 Aug 2021 01:01:03 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-1-3</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-1-3</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>바닐라 JS로 크롬 앱 만들기 (2) - Document Object And Event</title>
+        
+          <description>&lt;h2 id=&quot;document-object&quot;&gt;Document Object&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Thu, 05 Aug 2021 01:01:02 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-1-2</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-1-2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>바닐라 JS로 크롬 앱 만들기 (1) - Basic Data Types And Function</title>
+        
+          <description>&lt;h2 id=&quot;data-types&quot;&gt;Data Types&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Thu, 05 Aug 2021 01:01:01 +0000</pubDate>
+        <link>
+        https://jskim1215.github.io/study-1-1</link>
+        <guid isPermaLink="true">https://jskim1215.github.io/study-1-1</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
